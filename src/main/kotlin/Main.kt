@@ -3,7 +3,9 @@ import java.util.*
 fun main() {
     var x: String? = "abc900";
     //x = null
-    val l: Int = x?.length ?: -1
+    val l: Int = if (x != null) x.length else -1
+    //elvis оператор
+   // val l: Int = x?.length ?: -1
     println(l)
 
  /*   var y = readLine()?.toInt()
